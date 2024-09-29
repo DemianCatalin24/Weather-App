@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="weatherForm">
+      <input
+        type="text"
+        class="textInput"
+        placeholder="Please enter a city"
+        autofocus
+      />
+      <button type="submit" class="searchBtn">Check The Weather</button>
+      <div class="separatorText">OR</div>
+      <button type="sumbit" class="locationBtn" id="locationBtn">
+        Use Current Location
+      </button>
+    </form>
+
+    <div class="infoContainer" style="display: none"></div>
+    <div class="selector">
+      <h2>5 Days forecast</h2>
+      <label for="Hours">Choose the hour:</label>
+      <select class="hours" name="Hours">
+        <option value="0">00:00</option>
+        <option value="3">03:00</option>
+        <option value="6">06:00</option>
+        <option value="9">09:00</option>
+        <option value="12">12:00</option>
+        <option value="15">15:00</option>
+        <option value="18">18:00</option>
+        <option value="21">21:00</option>
+      </select>
+      <ul class="forecastContainer" style="display: none"></ul>
+    </div>
+  </body>
+</html>
+
+<!-- <h1 class="cityName">Cluj</h1>
+      <img class="weatherIcon" src="images/snow.png"></img>
+      <div class="temp">15°</div>
+      <div class="humidity">Humidity: 75%</div>
+      <div class="description">Clear Skies</p> -->

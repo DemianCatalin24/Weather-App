@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Arial;
+  /* background-color: hsl(200, 100%, 85%); */
+  background-color: hsl(224, 60%, 84%);
+  color: hsl(200, 100%, 10%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.weatherForm {
+  width: 90%;
+  max-width: 450px;
+  margin: 100 px auto 0;
+  margin-top: 60px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2b5ad1, #968ae6);
+  padding: 40px 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.separatorText {
+  color: hsl(200, 100%, 10%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* display: flex;
+  align-items: center;
+  flex-direction: column; */
+  /* padding: 10px; */
+}
+
+.textInput {
+  border: 0;
+  outline: 0;
+  padding: 15px 20px;
+  height: 30px;
+  font-size: 2rem;
+
+  font-weight: bold;
+  color: hsl(200, 100%, 10%);
+  background-color: hsl(224, 60%, 84%);
+  /* background-color: hsl(224, 60%, 84%); */
+  border-radius: 15px;
+  /* margin: 30px; */
+  margin-left: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.textInput::placeholder {
+  color: hsl(200, 100%, 10%);
+}
+button {
+  font-size: 2rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 15px;
+  /* margin-left: 70px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  /* background-color: hsl(0, 0%, 70%); */
+  background: linear-gradient(40deg, #e112ae, #a885a8);
+  color: hsl(200, 100%, 10%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.locationBtn:hover {
+  transform: translateY(-2px);
+  background-color: hsl(0, 0%, 65%);
+}
+.searchBtn:hover {
+  transform: translateY(-2px);
+  background-color: hsl(0, 0%, 65%);
+}
+
+.infoContainer {
+  width: 90%;
+
+  max-width: 450px;
+  margin: 100 px auto 0;
+  margin-top: 60px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2b5ad1, #968ae6);
+
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.weatherIcon {
+  width: 30%;
+  flex-direction: column;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.humidity {
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.temp {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.errorDisplay {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.temp-min {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  transform: translateX(-100px);
+}
+
+.temp-max {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  transform: translate(55px, -48px);
+}
+
+.forecastContainer {
+  width: fit-content;
+  height: 90%;
+  max-width: 650px;
+  margin: 100 px auto 0;
+  margin-top: 60px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2b5ad1, #968ae6);
+  padding: 40px 50px;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transition: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.forecastSeparator {
+  border: 1px black solid;
+  width: 100%;
+  transform: translateX(10deg);
+
+  margin-bottom: 10px;
+}
+
+.date,
+.tempFore,
+.descriptionFore {
+  width: 120px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.card {
+  list-style: none;
+  width: calc(100% / 5);
+}
+.weatherIconFore {
+  width: 60%;
+  flex-direction: column;
+}
+
+.tempFore {
+  display: flex;
+  translate: 1rem;
+}
+
+h2 {
+  padding-top: 15px;
+}
+
+select {
+  font-size: 1rem;
+  border-radius: 9px;
+  font-weight: 500;
+
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  border: none;
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(113, 130, 194);
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+option {
+  font-size: 1rem;
+  /* font-weight: 500; */
+  border-radius: 15px;
+}
+
+label {
+  font-size: 2rem;
+}
+
+.selector {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
